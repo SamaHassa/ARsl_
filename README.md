@@ -1,20 +1,20 @@
-1. Overview
+1. Overview 🧐
 
 ARsl_Project is an Arabic Sign Language (ArASL) recognition system.
 It identifies Arabic letters from hand gesture images using Deep Learning with a pretrained EfficientNetB0 CNN model.
 The project is deployed using Streamlit, allowing users to interact easily and get real-time predictions.
 
-2. Features
+2. Features ⚡
 
-Recognizes 32 Arabic sign language letters.
+✅ Recognizes 32 Arabic sign language letters
 
-Supports image uploads for letter prediction.
+✅ Supports image uploads for letter prediction
 
-Provides high accuracy predictions with confidence scores.
+✅ Provides high accuracy predictions with confidence scores
 
-Visualizes training and validation performance.
+✅ Visualizes training and validation performance
 
-3. Dataset
+3. Dataset 📊
 
 Dataset Name: Arabic Alphabets Sign Language Dataset (ARASL)
 
@@ -26,13 +26,13 @@ Number of Classes: 32
 
 Data Split
 
-Training set: 37,835 images
+🏋️ Training set: 37,835 images
 
-Validation set: 16,214 images
+🧪 Validation set: 16,214 images
 
-Test set: 50% of validation set
+📏 Test set: 50% of validation set
 
-4. Model Architecture
+4. Model Architecture 🏗️
 
 Base Model: EfficientNetB0 (pretrained on ImageNet)
 
@@ -52,37 +52,35 @@ Loss Function: Categorical Crossentropy
 
 Metrics: Accuracy
 
-5. Training
-Training Strategy
+5. Training 🚀
+Strategy
 
-Initial Training: 10 epochs with frozen base model.
+Initial Training: 10 epochs with frozen base model
 
-Fine-tuning: 5 epochs with all layers trainable to improve feature extraction.
+Fine-tuning: 5 epochs with all layers trainable
 
-Training Results
+Results
 
-Train Accuracy: 96%
+Train Accuracy: 96% ✅
 
-Test Accuracy: 98%
+Test Accuracy: 98% 🎯
 
 Notes:
 
 The model converged quickly, achieving high validation accuracy by epoch 5.
 
-6. Deployment
+6. Deployment 🌐
 
 The project is deployed using Streamlit.
-
-To run the app:
 
 python -m streamlit run app.py
 
 
 Users can upload images of hand gestures and get the predicted Arabic letter instantly.
 
-7. Dependencies
+7. Dependencies 🧰
 
-Python 3.9+
+Python 3.9+ 🐍
 
 TensorFlow 2.x
 
@@ -104,7 +102,7 @@ Streamlit
 
 Kaggle API
 
-8. Dataset Download Example
+8. Dataset Download Example ⬇️
 import os
 
 os.makedirs('/root/.kaggle', exist_ok=True)
@@ -119,8 +117,5 @@ kaggle.api.dataset_download_files(
     unzip=True
 )
 
-9. Model Saving
+9. Model Saving 💾
 model.save(r"C:\ARsl_\arsl_efficientnetb0_model.keras")
-
-![184dd228-0a1d-41dd-85dd-19a9d0c31b42](https://github.com/user-attachments/assets/9efff522-809a-4b7c-ad70-29ac194ea1f2)
-
